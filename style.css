@@ -1,0 +1,148 @@
+body {
+  background-color: #222222;
+  margin: 0;
+  padding: 0;
+}
+
+.field {
+  width: 50%;
+  padding-top: 5%;
+  margin: 0 auto;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+}
+
+.cork-rotated {
+  animation-name: cork;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.cork-holes {
+  animation-name: cork-holes;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.cork-shadow {
+  animation-name: cork-shadow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes cork {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes cork-holes {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes cork-shadow {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+.bubble-slow {
+  animation-name: bubble;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.bubble {
+  animation-name: bubble;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes bubble {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-70%);
+    opacity: 0;
+  }
+}
+
+.bubble-transparent {
+  animation-name: bubble-transparent;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.bubble-transparent-slow {
+  animation-name: bubble-transparent;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes bubble-transparent {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+}
+
+.bubbles-small {
+  animation-name: bubble-small;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes bubble-small {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+    100% {
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+}
